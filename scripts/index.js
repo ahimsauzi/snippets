@@ -3,7 +3,13 @@
  * - All our useful JS goes here, awesome!
  */
 
-document.querySelectorAll(".card-flip").classList.toggle("flip");
+let flipEl = document.querySelector('flip');
+
+if (shadesEl.classList.contains('flip')) {
+  shadesEl.classList.remove('flip');
+} else {
+  shadesEl.classList.add('flip');
+}
 
 /*
  * Holder.js for demo image
