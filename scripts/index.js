@@ -5,12 +5,12 @@
 
 let flipEl = document.querySelector('.card-flip');
 
-if (flipEl.classList.contains('flip')) {
-  flipEl.classList.remove('flip');
-} else {
-  flipEl.classList.add('flip');
-}
-
+flipEl.addEventListener('click', () => {
+  flipEl.classList.toggle('flip');
+});
+flipEl.addEventListener('ontouchstart', () => {
+  flipEl.classList.toggle('flip');
+});
 /*
  * Holder.js for demo image
  * Just for demo purpose
