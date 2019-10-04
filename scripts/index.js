@@ -3,7 +3,7 @@
  * - All our useful JS goes here, awesome!
  */
 
-let flipEl = document.querySelector('flip');
+let flipEl = document.querySelector('.card-flip');
 
 if (flipEl.classList.contains('flip')) {
   flipEl.classList.remove('flip');
