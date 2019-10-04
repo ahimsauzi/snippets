@@ -7,9 +7,11 @@ let flipEl = document.querySelector('.card-flip');
 
 flipEl.addEventListener('click', () => {
   flipEl.classList.toggle('flip');
+  console.log("Flipped");
 });
 flipEl.addEventListener('ontouchstart', () => {
   flipEl.classList.toggle('flip');
+  console.log("Flipped");
 });
 /*
  * Holder.js for demo image
