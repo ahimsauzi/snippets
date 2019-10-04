@@ -3,20 +3,21 @@
  * - All our useful JS goes here, awesome!
  */
  // forEach method, could be shipped as part of an Object Literal/Module
-var forEach = function (array, callback, scope) {
-  for (var i = 0; i < array.length; i++) {
-    callback.call(scope, i, array[i]); // passes back stuff we need
-  }
-};
+// var forEach = function (array, callback, scope) {
+//   for (var i = 0; i < array.length; i++) {
+//     callback.call(scope, i, array[i]); // passes back stuff we need
+//   }
+// };
 // document.querySelector('.card-flip').classList.toggle('flip')
 let flipEls = document.querySelectorAll('div.card-flip');
 
-[...flipEls].forEach((flipEl) => {
+for (const flipEl of flipEls){
   flipEl.addEventListener('touchstart', () => {
+    flipEl.classList.remove('hover');
     flipEl.classList.toggle('flip');
-    console.log("Flipped");
   });
-});
+}
+
 
 // flipEl.addEventListener('click', () => {
 //   flipEl.classList.toggle('flip');
