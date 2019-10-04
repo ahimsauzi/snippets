@@ -91,8 +91,8 @@ body {
   .card-flip,
   .front,
   .back {
-    width: 100%;
-    height: auto;
+    width: 360px;
+    height: 360px;
     min-height: 360px;
   }
 }
