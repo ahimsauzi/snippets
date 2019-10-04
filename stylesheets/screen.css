@@ -71,67 +71,50 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  * index.scss
  * - Add any styles you want here!
  */
-/* line 12, ../sass/screen.scss */
+/* line 11, ../sass/screen.scss */
 body {
-  background: #f5f5f5;
-  padding-top: 100px;
+  padding-top: 150px;
 }
 
-/* line 23, ../sass/screen.scss */
-.card-flip:hover .flipper, .card-flip.hover .flipper, .card-flip.flip .flipper {
+/* line 14, ../sass/screen.scss */
+.card-flip {
   perspective: 1000px;
+}
+/* line 16, ../sass/screen.scss */
+.card-flip:hover .flip, .card-flip.hover .flip {
   transform: rotateY(180deg);
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
 .carousel-caption {
   position: absolute;
   right: 15%;
-  top: 65px;
+  bottom: 25%;
   left: 15%;
   z-index: 10;
-  padding-top: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
-@media (min-width: 768px) {
-  /* line 39, ../sass/screen.scss */
-  .card-flip,
-  .front,
-  .back {
-    width: 360px;
-    height: 360px;
-    min-height: 360px;
-  }
-}
-@media (max-width: 767.98px) {
-  /* line 39, ../sass/screen.scss */
-  .card-flip,
-  .front,
-  .back {
-    width: 360px;
-    height: 360px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-/* line 54, ../sass/screen.scss */
-.card-flip .card-block,
-.front .card-block,
-.back .card-block {
-  padding: 1.25rem 1.25rem;
+/* line 33, ../sass/screen.scss */
+.card-flip,
+.front,
+.back {
+  width: 100%;
+  height: 245px;
 }
 
-/* line 60, ../sass/screen.scss */
-.flipper {
+/* line 40, ../sass/screen.scss */
+.flip {
   transition: 0.6s;
   transform-style: preserve-3d;
   position: relative;
 }
 
-/* line 66, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 .front,
 .back {
   backface-visibility: hidden;
@@ -140,13 +123,17 @@ body {
   left: 0;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 .front {
   z-index: 2;
   transform: rotateY(0deg);
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 .back {
   transform: rotateY(180deg);
+}
+/* line 61, ../sass/screen.scss */
+.back .card {
+  padding: 1.5rem;
 }
