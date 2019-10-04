@@ -86,57 +86,8 @@ body {
   transform: rotateY(180deg);
 }
 
-@media (min-width: 768px) {
-  /* line 23, ../sass/screen.scss */
-  .card-flip,
-  .front,
-  .back {
-    width: 360px;
-    height: 360px;
-    min-height: 360px;
-  }
-}
-@media (max-width: 767.98px) {
-  /* line 23, ../sass/screen.scss */
-  .card-flip,
-  .front,
-  .back {
-    width: 360px;
-    height: 360px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-/* line 38, ../sass/screen.scss */
-.card-flip .card-block,
-.front .card-block,
-.back .card-block {
-  padding: 1.25rem 1.25rem;
-}
-
-/* line 44, ../sass/screen.scss */
-.flip {
-  transition: 0.6s;
-  transform-style: preserve-3d;
-  position: relative;
-}
-
-/* line 50, ../sass/screen.scss */
-.front,
-.back {
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-/* line 58, ../sass/screen.scss */
-.front {
-  z-index: 2;
-  transform: rotateY(0deg);
-}
-/* line 61, ../sass/screen.scss */
-.front .carousel-caption {
+/* line 23, ../sass/screen.scss */
+.carousel-caption {
   position: absolute;
   right: 15%;
   top: 65px;
@@ -147,13 +98,58 @@ body {
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
-/* line 73, ../sass/screen.scss */
-.front img {
-  height: 265px;
-  display: block;
+
+@media (min-width: 768px) {
+  /* line 35, ../sass/screen.scss */
+  .card-flip,
+  .front,
+  .back {
+    width: 360px;
+    height: 360px;
+    min-height: 360px;
+  }
+}
+@media (max-width: 767.98px) {
+  /* line 35, ../sass/screen.scss */
+  .card-flip,
+  .front,
+  .back {
+    width: 360px;
+    height: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* line 50, ../sass/screen.scss */
+.card-flip .card-block,
+.front .card-block,
+.back .card-block {
+  padding: 1.25rem 1.25rem;
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
+.flip {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* line 62, ../sass/screen.scss */
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 70, ../sass/screen.scss */
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+/* line 75, ../sass/screen.scss */
 .back {
   transform: rotateY(180deg);
 }
