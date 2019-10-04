@@ -2,9 +2,22 @@
  * index.js
  * - All our useful JS goes here, awesome!
  */
-document.querySelector('.card-flip').classList.toggle('flip')
-// let flipEl = document.querySelector('.card-flip');
-//
+ // forEach method, could be shipped as part of an Object Literal/Module
+var forEach = function (array, callback, scope) {
+  for (var i = 0; i < array.length; i++) {
+    callback.call(scope, i, array[i]); // passes back stuff we need
+  }
+};
+// document.querySelector('.card-flip').classList.toggle('flip')
+let flipEls = document.querySelectorAll('div.card-flip');
+
+[...flipEls].forEach((flipEl) => {
+  flipEl.addEventListener('touchstart', () => {
+    flipEl.classList.toggle('flip');
+    console.log("Flipped");
+  });
+});
+
 // flipEl.addEventListener('click', () => {
 //   flipEl.classList.toggle('flip');
 //   console.log("Flipped");
