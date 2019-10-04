@@ -2,17 +2,17 @@
  * index.js
  * - All our useful JS goes here, awesome!
  */
-
-let flipEl = document.querySelector('.card-flip');
-
-flipEl.addEventListener('click', () => {
-  flipEl.classList.toggle('flip');
-  console.log("Flipped");
-});
-flipEl.addEventListener('ontouchstart', () => {
-  flipEl.classList.toggle('flip');
-  console.log("Flipped");
-});
+document.querySelector('.card-flip').classList.toggle('flip')
+// let flipEl = document.querySelector('.card-flip');
+//
+// flipEl.addEventListener('click', () => {
+//   flipEl.classList.toggle('flip');
+//   console.log("Flipped");
+// });
+// flipEl.addEventListener('ontouchstart', () => {
+//   flipEl.classList.toggle('flip');
+//   console.log("Flipped");
+// });
 /*
  * Holder.js for demo image
  * Just for demo purpose
