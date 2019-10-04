@@ -16,7 +16,9 @@ body {
 .card-flip {
   perspective: 1000px;
   &:hover .flip,
-  &.hover .flip {
+  &:active .flip,
+  &.hover .flip,
+  &active .flip {
     transform: rotateY(180deg);
   }
 }
