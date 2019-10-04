@@ -5,10 +5,10 @@
 
 let flipEl = document.querySelector('flip');
 
-if (shadesEl.classList.contains('flip')) {
-  shadesEl.classList.remove('flip');
+if (flipEl.classList.contains('flip')) {
+  flipEl.classList.remove('flip');
 } else {
-  shadesEl.classList.add('flip');
+  flipEl.classList.add('flip');
 }
 
 /*
