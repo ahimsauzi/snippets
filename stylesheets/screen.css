@@ -82,12 +82,12 @@ body {
   perspective: 1000px;
 }
 /* line 18, ../sass/screen.scss */
-.card-flip:hover .flip, .card-flip.hover .flip {
+.card-flip:hover .flip, .card-flip:active .flip, .card-flip.hover .flip, .card-flip.active .flip {
   transform: rotateY(180deg);
 }
 
 @media (min-width: 768px) {
-  /* line 23, ../sass/screen.scss */
+  /* line 25, ../sass/screen.scss */
   .card-flip,
   .front,
   .back {
@@ -97,7 +97,7 @@ body {
   }
 }
 @media (max-width: 767.98px) {
-  /* line 23, ../sass/screen.scss */
+  /* line 25, ../sass/screen.scss */
   .card-flip,
   .front,
   .back {
@@ -107,21 +107,21 @@ body {
     margin-right: auto;
   }
 }
-/* line 38, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 .card-flip .card-block,
 .front .card-block,
 .back .card-block {
   padding: 1.25rem 1.25rem;
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 .flip {
   transition: 0.6s;
   transform-style: preserve-3d;
   position: relative;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 .front,
 .back {
   backface-visibility: hidden;
@@ -130,12 +130,12 @@ body {
   left: 0;
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 .front {
   z-index: 2;
   transform: rotateY(0deg);
 }
-/* line 61, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 .front .carousel-caption {
   position: absolute;
   right: 15%;
@@ -147,13 +147,13 @@ body {
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
-/* line 73, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 .front img {
   height: 265px;
   display: block;
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 .back {
   transform: rotateY(180deg);
 }
