@@ -1,0 +1,159 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+/* line 12, ../sass/screen.scss */
+body {
+  background: #f5f5f5;
+  padding-top: 100px;
+}
+
+/* line 16, ../sass/screen.scss */
+.card-flip {
+  perspective: 1000px;
+}
+/* line 18, ../sass/screen.scss */
+.card-flip:hover .flip, .card-flip.hover .flip {
+  transform: rotateY(180deg);
+}
+
+@media (min-width: 768px) {
+  /* line 23, ../sass/screen.scss */
+  .card-flip,
+  .front,
+  .back {
+    width: 100%;
+    height: auto;
+    min-height: 360px;
+  }
+}
+@media (max-width: 767.98px) {
+  /* line 23, ../sass/screen.scss */
+  .card-flip,
+  .front,
+  .back {
+    width: 360px;
+    height: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* line 38, ../sass/screen.scss */
+.card-flip .card-block,
+.front .card-block,
+.back .card-block {
+  padding: 1.25rem 1.25rem;
+}
+
+/* line 44, ../sass/screen.scss */
+.flip {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* line 50, ../sass/screen.scss */
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 58, ../sass/screen.scss */
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+/* line 61, ../sass/screen.scss */
+.front .carousel-caption {
+  position: absolute;
+  right: 15%;
+  top: 65px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 0px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+/* line 73, ../sass/screen.scss */
+.front img {
+  height: 265px;
+  display: block;
+}
+
+/* line 79, ../sass/screen.scss */
+.back {
+  transform: rotateY(180deg);
+}

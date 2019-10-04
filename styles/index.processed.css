@@ -32,8 +32,9 @@ body {
 .card-flip,
 .front,
 .back {
-  width: 100%;
+  width: 265px;
   height: 245px;
+  margin-bottom: 34px;
 }
 
 .flip {
