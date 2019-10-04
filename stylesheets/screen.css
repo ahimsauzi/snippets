@@ -18,19 +18,13 @@ body {
 }
 
 /* flip the pane when hovered */
-/* line 24, ../sass/screen.scss */
-.card-flip:hover .flipper, .card-flip.hover .flipper {
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
-
-/* line 28, ../sass/screen.scss */
+/* line 18, ../sass/screen.scss */
 .card-flip:hover .flipper, .card-flip.hover .flipper, .card-flip.flip .flipper {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
-/* line 32, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
 .carousel-caption {
   position: absolute;
   right: 15%;
@@ -44,7 +38,7 @@ body {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 .card-flip,
 .front,
 .back {
@@ -52,7 +46,7 @@ body {
   height: 245px;
 }
 
-/* line 51, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 .flipper {
   -webkit-transition: 0.6s;
   transition: 0.6s;
@@ -61,7 +55,7 @@ body {
   position: relative;
 }
 
-/* line 59, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 .front,
 .back {
   -webkit-backface-visibility: hidden;
@@ -71,7 +65,7 @@ body {
   left: 0;
 }
 
-/* line 68, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 .front {
   z-index: 2;
   /* for firefox 31 */
@@ -79,12 +73,12 @@ body {
   transform: rotateY(0deg);
 }
 
-/* line 75, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 .back {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
-/* line 78, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 .back .card {
   padding: 1.5rem;
 }
