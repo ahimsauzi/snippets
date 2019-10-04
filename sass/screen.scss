@@ -14,11 +14,15 @@ body {
   padding-top: 100px;
 }
 .card-flip {
+  // perspective: 1000px;
+  // &:hover .flip,
+  // &.hover .flip {
+  //   transform: rotateY(180deg);
+  // }
+}
+.card-flip:hover .flipper, .card-flip.hover .flipper, .card-flip.flip .flipper {
   perspective: 1000px;
-  &:hover .flip,
-  &.hover .flip {
-    transform: rotateY(180deg);
-  }
+	transform: rotateY(180deg);
 }
 .carousel-caption {
     position: absolute;
@@ -53,7 +57,7 @@ body {
 
 }
 
-.flip {
+.flipper {
   transition: 0.6s;
   transform-style: preserve-3d;
   position: relative;

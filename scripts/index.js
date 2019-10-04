@@ -3,7 +3,7 @@
  * - All our useful JS goes here, awesome!
  */
 
-document.querySelector(".card-flip").classList.toggle("flip");
+document.querySelectorAll(".card-flip").classList.toggle("flip");
 
 /*
  * Holder.js for demo image
