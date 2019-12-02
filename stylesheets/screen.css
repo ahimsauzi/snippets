@@ -82,20 +82,28 @@ body {
 .back .card {
   padding: 1.5rem;
 }
-.popover-container {
-  h1 {
-    padding-bottom: 100px;
-  }
+
+/* line 73, ../sass/screen.scss */
+.popover-container h1 {
+  padding-bottom: 50px;
 }
+/* line 76, ../sass/screen.scss */
+.popover-container a, .popover-container a:hover {
+  text-decoration: underline;
+}
+
+/* line 80, ../sass/screen.scss */
 .popover-icon {
   height: 16px;
   width: 187px;
   color: #000000;
-  font-family: "Cera PRO";
+  font-family: "Cera PRO", sans-serif;
   font-size: 13px;
   letter-spacing: 0.26px;
   line-height: 16px;
 }
+
+/* line 89, ../sass/screen.scss */
 .popover-icon:hover {
   color: #191919;
   text-decoration: underline;
