@@ -82,3 +82,21 @@ body {
 .back .card {
   padding: 1.5rem;
 }
+.popover-container {
+  h1 {
+    padding-bottom: 100px;
+  }
+}
+.popover-icon {
+  height: 16px;
+  width: 187px;
+  color: #000000;
+  font-family: "Cera PRO";
+  font-size: 13px;
+  letter-spacing: 0.26px;
+  line-height: 16px;
+}
+.popover-icon:hover {
+  color: #191919;
+  text-decoration: underline;
+}

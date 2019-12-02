@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+	<title>A Popover Example with html content </title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/screen.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<section>
+    <div class="container popover-container">
+        <div class="row justify-content-md-center">
+            <div class="col-sm-12 col-lg-10">
+                <!-- partial:index.partial.html -->
+                <h1>Popover with html content</h1>
+                <!-- button popover  -->
+                <div class="popover-block-container">
+                    <a tabindex="0" class="popover-icon" data-popover-content="#unique-id"
+                       data-toggle="popover" data-placement="right">
+                        Where to find the MFQ Code?
+                    </a>
+                    <div id="unique-id" style="display:none;">
+                        <div class="popover-body">
+                            <button type="button" class="popover-close close">
+                                <i class="material-icons">close</i>
+                            </button>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis libero ipsum, imperdiet
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                <!-- /End button popover  -->
+                <!-- partial -->
+<script  src="./scripts/popover.js"></script>
+
+</body>
+</html>

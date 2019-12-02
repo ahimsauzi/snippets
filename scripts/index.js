@@ -18,7 +18,14 @@ for (const flipEl of flipEls){
   });
 }
 
-
+$("[data-toggle=popover]").popover({
+  html : true,
+  trigger: 'focus',
+  content: function() {
+    var content = $(this).attr("data-popover-content");
+    return $(content).children(".popover-body").html();
+  }
+});
 // flipEl.addEventListener('click', () => {
 //   flipEl.classList.toggle('flip');
 //   console.log("Flipped");
